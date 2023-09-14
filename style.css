@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "vcr_osd_mono";
+  background-color: #f1f1f1;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 2%;
+  margin-top: 5px;
+  padding: 0 5%;
+  background-color: white;
+  border: 2px solid black; /* Optional: Border for visualization */
+}
+
+.container h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-bottom: 2px solid black; /* Add a black border to the bottom */
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px; /* Increase the font size */
+  font-family: 'VCR_OSD_MONO'; /* Use the VCR font family */
+  letter-spacing: 4px; /* Add letter spacing for an industrial look */
+  text-transform: uppercase; /* Convert text to uppercase for emphasis */
+}
+
+/* Navbar Sections */
+.navbar-left,
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-center {
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Navbar Links */
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-family: "VCR_OSD_MONO";
+  font-size: 20px;
+  text-align: center;
+  font: bold;
+}
+
+/* Sidebar Navigation Styles */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: grey;
+}
+
+#menu-button {
+  font-size: 1.5em;
+
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .navbar-left,
+  .navbar-right {
+    display: none;
+  }
+}
+
+@media (min-width: 501px) {
+  .sidenav,
+  .closebtn,
+  #menu-button {
+    display: none;
+  }
+}
